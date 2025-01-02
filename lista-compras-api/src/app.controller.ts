@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller(`${ process.env.BASE_URL }`)
+@Controller('/lista-compra/api')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 

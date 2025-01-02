@@ -11,7 +11,7 @@ import { ItemService } from './item.service';
 import { ItemEntity } from './item.entity';
 import { ItemDto } from './item.dto';
 
-@Controller(`${ process.env.BASE_URL }/item`)
+@Controller(`/lista-compra/api/item`)
 export class ItemController {
   constructor(private readonly itemService: ItemService) {}
 
