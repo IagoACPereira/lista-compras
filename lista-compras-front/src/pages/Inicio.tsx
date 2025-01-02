@@ -33,6 +33,7 @@ export function Inicio(): JSX.Element {
     setTimeout(() => {
       navega(0);
     }, 1000 * 30);
+    
   }
 
   useEffect(() => {
