@@ -29,6 +29,16 @@ export function Inicio(): JSX.Element {
     }
   };
 
+  function recarregaPagina(): void {
+    setTimeout(() => {
+      navega(0);
+    }, 1000 * 30);
+  }
+
+  useEffect(() => {
+    recarregaPagina();
+  }, [])
+
   async function marcaItem(id: string | number): Promise<void> {
     try {
       const resposta = await axios.get(`${ env.urlApi }/item/${ id }`);

@@ -1,3 +1,3 @@
 export const env = {
-  urlApi: 'http://localhost:3000/lista-compra/api'
+  urlApi: 'http://192.168.18.36:3000/lista-compra/api'
 }
